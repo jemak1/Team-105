@@ -1,12 +1,8 @@
-LIST OF MEMBERS FOR TEAM XXX
- yo yo boom boom boyz
+LIST OF MEMBERS FOR TEAM 105
+
 MEMBER 1 Jake Makaling
  
-<<<<<<< HEAD
-
-=======
 MEMBER 2 Hannah
->>>>>>> origin/master
  
 Member 3 Japheth Langerak
  
