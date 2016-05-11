@@ -3,13 +3,11 @@
 var geocoder;
   var map;
   function initialize() {
-    geocoder = new google.maps.Geocoder();
     var latlng = new google.maps.LatLng(-34.397, 150.644);
     var mapOptions = {
       zoom: 8,
       center: latlng
     }
-    map = new google.maps.Map(document.getElementById("map"), mapOptions);
   }
 
   function codeAddress() {
@@ -28,11 +26,15 @@ var geocoder;
   }
 
 
-      var map;
-      function initMap() {
-        map = new google.maps.Map(document.getElementById('map'), {
-          center: {lat: -34.397, lng: 150.644},
-          zoom: 8
-        });
-      }
- 
+function initMap() {
+  map = new google.maps.Map(document.getElementById('map'), {
+    zoom: 8,
+    center: {lat: -34.397, lng: 150.644}
+  });
+  geocoder = new google.maps.Geocoder();
+
+  document.getElementById("address").oninput(function() {
+    codeAddress(geocoder, map);
+  });
+}
+
